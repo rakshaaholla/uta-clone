@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+body {
+    background-color: rgb(232, 199, 235);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+nav ul{
+    display:flex;
+    align-items: center;
+    list-style-type: none;
+    height: 50px;
+    background-color: rgb(118, 82, 127);
+    color: azure;
+}
+nav ul li {
+    padding: 0 12px;
+    color: black;
+}
+.brand img {
+    width: 45px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container{
+    min-height: 63vh;
+    background-color: black;
+    color: azure;
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    width: 80%;
+    height: 50%;
+    margin: 23px auto;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url(bg.jpeg);
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-size: cover; /* Adjust the background image sizing as needed */
+
+}
+
+.bottom {
+    position: sticky;
+    height: 100px;
+    background-color: rgb(118, 82, 127);
+    color:white;
+    bottom: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons{
+    margin-top: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons i{
+    cursor: pointer;
+    margin-right: 8px;
+    font-size: 24px;
+}
+
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songitemcontainer {
+    margin-top: 30px;
+}
+
+.songItem {
+    height: 50px;
+    display: flex;
+    background-color:  rgb(232, 199, 235);
+    /*width: 80%;*/
+    border-radius: 34%;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.songItem img {
+    width: 35px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp {
+    margin: 0 23px;;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo {
+    position: absolute;
+    left: 10vw;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.songInfo img {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+
+@media only screen and (max-width: 1100px) {
+    body {
+      background-color: rgb(179, 0, 255);
+    }
+  }
